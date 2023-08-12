@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ATLANTIS THE ROYAL</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            position: relative;
+        }
+        .image{
+            width: 100%;
+            height: 100vh;
+        }
+        
+       
+        .navbar{
+            height: 10vh;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            display: flex;
+            justify-content: space-between;
+            
+            
+           
+        }
+        .navbar p{
+            line-height: 10vh;
+            margin-left: 10px;
+            color: antiquewhite;
+
+        }
+        .contact{
+            position: absolute;
+            margin-left: 10px;
+            
+        }
+
+        .navbar ul{
+            display: flex;
+            
+        }
+        .navbar ul li{
+            list-style: none;
+            
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            line-height: 10vh;
+            padding: 10px;
+            
+            
+        }
+        #checkbox{
+            display: none;
+        }
+        #checkbtn{
+            display: none;
+            line-height: 10vh;
+            margin-left: 10px; 
+            color: antiquewhite; 
+            
+        }
+        #checkbox:checked ~ ul{
+            left: 0px;
+        }
+        .icons{
+            line-height: 10vh;
+            padding: 10px;
+            
+        }
+        .book{
+            line-height: 10vh;
+            color: antiquewhite;
+        }
+        .logo{
+            line-height: 10vh;            
+            font-family: 'Times New Roman', Times, serif;
+            
+            
+        }
+        hr{
+            height: 1px;
+            width: 100%;
+            background-color: antiquewhite;
+            
+        }
+        .links{
+            color: antiquewhite;
+        }
+        .content{
+            position: absolute;
+            top: 10vh;
+            height: 10vh;
+            width: 100%;
+            
+        }
+        .elink{
+            color: antiquewhite;
+            text-decoration: none;
+            padding: 10px;
+            
+        }
+        .content ul{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .content ul li{
+            list-style: none;
+            
+        }
+        @media screen and (max-width:900px) {
+            .navbar ul li{
+                display: none;
+            }
+            .icons{
+                display: none;
+            }
+            #checkbtn{
+                display: block;
+            }
+            .navbar ul {
+                height: 100vh;
+                width: 40%;
+                position: fixed;
+                background-color: rgb(29, 29, 47);
+                /* left: 100px; */
+                left: -100%;
+                transition: .5s;
+                display: flex;
+                flex-direction: column;
+            }
+            .navbar ul li{
+            display: block;
+            text-align: center;
+        
+        
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img1.jpg" class="image" alt="">        
+
+        <div class="navbar">                
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+            <p>ATLANTIS THE ROYAL</p>                                             
+            <ul>                
+                <label for="checkbox" id="checkbtn"><i class="fa-solid fa-xmark"></i></label>
+                <li><a href="#" class="links">HOME</a></li>
+                <li><a href="#" class="links">ABOUT</a></li>
+                <li><a href="#" class="links">SERVICES</a></li>
+                <li><a href="#" class="book">BOOK NOW</a></li>                
+            </ul>
+            
+        </div>
+        
+        <div class="content">
+            <!-- <hr> -->
+            <ul>                
+                
+                <li><a href="#" class="elink"> STAYS</a></li>
+                <li><a href="#" class="elink">ENTERTAINMENT</a></li>
+                <li><a href="#" class="elink">DINING</a></li>
+                <li><a href="#" class="elink">ADVENTURE</a></li>
+                <li><a href="#" class="elink">EVENTS</a></li>
+                <li><a href="#" class="elink">OFFERS</a></li>  
+                              
+            </ul>
+        </div>
+
+   
+    </div>
+</body>
+</html>
